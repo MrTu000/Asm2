@@ -95,6 +95,9 @@ app.get('/edit',async (req,res)=>{
 var img = require('path').join(__dirname, '/img');
 app.use(express.static(img));
 
-app.listen(3000);
-console.log('Server is running at 3000')
+// app.listen(3000);
+// console.log('Server is running at 3000')
+const PORT = process.env.PORT||3000 // cai này để kết nối online đến heroku
+app.listen(PORT); //dùng PORT để kết nối datta base
+console.log('server is running at 3000')
 
