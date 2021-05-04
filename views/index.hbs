@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="giaodien.css">
+<link rel="stylesheet" href="font-awesome.min.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy Store</title>
+</head>
+
+<body>
+
+    <div class="title">
+        <h1>Toys Store</h1>
+    </div>
+    <form action="/search" method="post">
+        <input class="as" type="text" name="txtName" placeholder="Name" />
+        <input class="tu" type="submit" value="Search">
+    </form>
+    <section>
+        <nav class="container">
+            <img src="https://t3.ftcdn.net/jpg/02/20/25/48/360_F_220254823_gTvIc9Zdtkao68XrcTnlogHXMmBYDIEj.jpg" alt="Snow"
+                style="width:100%">
+            <a href="/insert">
+                <input class="nhung" type="submit" id="btn" value="New Product">
+            </a>
+        </nav>
+        <article>
+            <table width="50%" border="1">
+                <tr>
+                    <td>Number</td>
+                    <td>Name</td>
+                    <td>Price</td>
+                    <td>Delete</td>
+                    <td>Update</td>
+                </tr>
+                {{# each model}}
+                <tr>
+                    <td>{{number}}</td>
+                    <td>{{name}}</td>
+                    <td>{{price}}</td>
+                    <td><a href="/delete?id={{_id}}">Delete</a></td>
+                    <td><a href="/edit?id={{_id}}">Edit</a></td>
+                </tr>
+                {{/each}}
+            </table>
+        </article>
+    </section>
+    <marquee>
+        <h2><p style="color: brown;"><i class="fa fa-truck" aria-hidden="true"></i>  
+        <i class="fa fa-ambulance" aria-hidden="true"></i>
+        </p></h2>
+    </marquee>
+    <footer>
+     <img class="hehe" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5M9Vmo05d8QxiNzG8pqK-ASZEhTU55Nh4gw&usqp=CAU">   
+<h1>
+    <a href="https://www.facebook.com/profile.php?id=100011959542722"><i class="fa fa-facebook-square" aria-hidden="true" style="color: brown;" > Đoàn Tú</i></a>
+ </h1>
+ <h1>
+     <a href="https://www.instagram.com/doantu.28/"><i class="fa fa-instagram" aria-hidden="true"> doantu.28</i></a>
+ </h1>
+ <h1>
+     <i class="fa fa-phone" aria-hidden="true"> 0963677559</i>
+ </h1>
+ <img class="haha" src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/2/mary-lees-toy-store-geno-peoples.jpg">
+    </footer>
+
+</body>
+
+</html>

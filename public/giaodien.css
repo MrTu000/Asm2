@@ -1,0 +1,158 @@
+.title{
+    text-align: center;
+    height: 120px;
+    color: red;
+    animation-name: example;
+    animation-duration: 20s;
+    font-size: 35px;
+
+    }
+  @keyframes example {
+    0%   {color:red; }
+    10%  {color:blue }
+    25%  {color: yellow }
+    40%  {color:blue;}
+    50%  {color:rgb(19, 18, 18) }
+}
+
+form{
+    text-align: center;
+    height: 100px;
+    
+}
+form .tu{
+
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+
+      }
+      
+      .tu:hover {background-color: #3e8e41}
+      
+      .tu:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }  
+  
+
+  nav {
+    float: left;
+    width: 25%;
+    height: 300px;
+    background: #ccc;
+    text-align: center;
+    margin-left: 50px;
+
+  }
+  
+ .container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    
+  }
+  
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .container .nhung {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .container .nhung:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  article {
+    float: left;
+    padding: 10px;
+    width: 1235px;
+    background-color: #f1f1f1;
+    height: 315px; 
+    margin-left: 50px;
+  }
+  
+
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }}
+
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: -1000px;
+      }
+      
+      tr, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+      tr, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #e6dddd;
+      }
+     form .as {
+        border-radius: 25px;
+        border: 2px solid #73AD21;
+        padding: 20px; 
+        width: 200px;
+        height: 10px;  
+    }
+footer .hehe{
+  margin-right: 80%;
+  margin-bottom: -220px;
+}
+footer .haha{
+  margin-left: 76%;
+  height: 220px;
+  margin-top: -250px;
+}
