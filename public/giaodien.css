@@ -147,6 +147,10 @@ form .tu{
         width: 200px;
         height: 10px;  
     }
+footer{
+  border: 10px;
+  margin-top: 100px;
+}
 footer .hehe{
   margin-right: 80%;
   margin-bottom: -220px;
